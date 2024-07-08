@@ -3,6 +3,7 @@ frontend:
   phases:
     build:
       commands:
+        - export PATH="$PATH:`pwd`/flutter/bin"
         - flutter pub get
         - flutter build web
   artifacts:
