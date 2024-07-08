@@ -6,8 +6,8 @@ frontend:
         - echo "Installing Flutter SDK..."
         - sudo yum update -y
         - sudo yum install -y wget unzip gtk3-devel libnotify-devel Xvfb
-        - wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_2.8.1-stable.tar.xz
-        - tar xf flutter_linux_2.8.1-stable.tar.xz
+        - wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_3.19-stable.tar.xz
+        - tar xf flutter_linux_3.19-stable.tar.xz
         - export PATH="$PATH:$(pwd)/flutter/bin"
         - flutter pub get
         - flutter build web
