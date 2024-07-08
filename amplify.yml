@@ -1,0 +1,11 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - flutter pub get
+        - flutter build web
+  artifacts:
+    baseDirectory: build/web
+    files:
+      - '**/*'
