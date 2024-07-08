@@ -4,8 +4,8 @@ frontend:
     build:
       commands:
         - echo "Installing Flutter SDK..."
-        - yum update -y
-        - yum install -y wget unzip gtk3-devel libnotify-devel webkit2gtk3-devel xorg-x11-server-Xvfb
+        - sudo yum update -y
+        - sudo yum install -y wget unzip gtk3-devel libnotify-devel webkit2gtk3-devel xorg-x11-server-Xvfb
         - wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_2.5.1-stable.tar.xz
         - tar xf flutter_linux_2.5.1-stable.tar.xz
         - export PATH="$PATH:$(pwd)/flutter/bin"
